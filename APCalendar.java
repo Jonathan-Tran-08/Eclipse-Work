@@ -16,8 +16,11 @@ public class APCalendar {
 		return count;
 	}
 	
-	private int firstDayOfYear (int year) {
-		return 0;
+	public int firstDayOfYear (int year) {
+		int difference = Math.abs(year - 2012);
+		int leapYearCount = numberOfLeapYears(year,year+difference);
+		int findFirst = (difference+leapYearCount)%7;
+		return findFirst-1;
 	}
 	
 	private int dayOfYear (int month, int day, int year) {
