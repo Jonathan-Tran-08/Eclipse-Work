@@ -1,0 +1,13 @@
+
+public class PhraseTester {
+
+	public static void main(String[] args) {
+		Phrase phrase1 = new Phrase("A cat ate kate.");
+		Phrase phrase2 = new Phrase("a cat ate late.");
+		Phrase phrase3 = new Phrase("A cat ate late.");
+		Phrase phrase4 = new Phrase("aaaa");
+		Phrase phrase5 = new Phrase("aaaa");
+
+		System.out.println(phrase1.findNthOccurence("a", 3));
+	}
+}
