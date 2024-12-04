@@ -1,0 +1,36 @@
+package Hotel;
+
+public class HotelTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hotel cali = new Hotel(5);
+		cali.requestRoom("Christian");
+		cali.requestRoom("Caitlyn");
+		cali.requestRoom("Anthony");
+		cali.requestRoom("Chase");
+		cali.requestRoom("Jonathan");
+		cali.requestRoom("Dachi");
+		
+		cali.cancelAndReassign(cali.getReservations()[0]);
+		
+		Hotel motel = new Hotel(4);
+		motel.requestRoom("Jonathan");
+		motel.requestRoom("Jon Tran");
+		motel.requestRoom("JawnTran");
+		motel.requestRoom("JohnnyT");
+		motel.requestRoom("ButteredCabbage");
+		motel.requestRoom("OiledLettuce");
+		motel.requestRoom("JT");
+		motel.cancelAndReassign(motel.getReservations()[0]);
+		
+		for(int i = 0; i < motel.getReservations().length; i++) {
+		System.out.println(motel.getReservations()[i]);	
+		}
+		
+		
+		System.out.println(motel.getWaitList());
+		
+	}
+
+}
