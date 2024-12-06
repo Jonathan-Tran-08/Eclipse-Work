@@ -21,6 +21,30 @@ public class Phrase {
 	}
 	
 	public void replaceNthOccurrence(String str, int n, String repl) {
+		if(findNthOccurence(str, n) != -1) {
+		String start = currentPhrase.substring(0, findNthOccurence(str,n)) ; 
+		String end = currentPhrase.substring(start.length()+1, currentPhrase.length());
+		currentPhrase = start + repl + end;
+		}
+	}
+	
+	public int findLastOccurrence(String str) {
+		for(int i = currentPhrase.length() - str.length(); i >= 0; i--) {
+			if(currentPhrase.substring(i,i+str.length()).equals(str));
+			return i;}
+		return -1;	
+		}
+	
+	public String toString() {
+		return currentPhrase;
+	}
+	
+}
+
+		return num;
+	}
+	
+	public void replaceNthOccurrence(String str, int n, String repl) {
 		
 		
 	}
