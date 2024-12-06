@@ -23,7 +23,7 @@ public class Phrase {
 	public void replaceNthOccurrence(String str, int n, String repl) {
 		if(findNthOccurence(str, n) != -1) {
 		String start = currentPhrase.substring(0, findNthOccurence(str,n)) ; 
-		String end = currentPhrase.substring(start.length()+1, currentPhrase.length());
+		String end = currentPhrase.substring(start.length()+2, currentPhrase.length());
 		currentPhrase = start + repl + end;
 		}
 	}
@@ -39,6 +39,4 @@ public class Phrase {
 		return currentPhrase;
 	}
 	
-}
-
 }
