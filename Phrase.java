@@ -41,20 +41,4 @@ public class Phrase {
 	
 }
 
-		return num;
-	}
-	
-	public void replaceNthOccurrence(String str, int n, String repl) {
-		
-		
-	}
-	
-	public int findLastOccurrence(String str) {
-		return 0;
-	}
-	
-	public String toString() {
-		return "";
-	}
-	
 }
