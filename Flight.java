@@ -1,9 +1,18 @@
 
 public class Flight {
-	public Time getDepartureTime() {
-		return null;
+	private Time DepartureTime;
+	private Time ArrivalTime;
+
+	public Flight(Time d, Time a) {
+		DepartureTime = d;
+		ArrivalTime = a;
 	}
-	 public Time getArrivalTime(){
-		 return null;
-	 }
+
+	public Time getDepartureTime() {
+		return DepartureTime;
+	}
+
+	public Time getArrivalTime() {
+		return ArrivalTime;
+	}
 }
