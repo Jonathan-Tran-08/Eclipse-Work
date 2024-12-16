@@ -1,8 +1,12 @@
 import java.util.*;
 
 public class Trip {
- private ArrayList<Flight> flights;
  
+	private ArrayList<Flight> flights;
+ 
+	public Trip (ArrayList<Flight> f) {
+		flights = f;
+	}
  public int getDuration() {
 	return 0; 
  }
